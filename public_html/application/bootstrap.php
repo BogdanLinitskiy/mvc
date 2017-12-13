@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hillel
- * Date: 13.12.17
- * Time: 20:19
- */
+
+//require_once 'core/Model.php';
+//require_once 'core/View.php';
+//require_once 'core/Controller.php';
+require_once 'core/Route.php';
+
+Route::start();
