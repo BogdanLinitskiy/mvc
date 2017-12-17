@@ -5,7 +5,10 @@ error_reporting(E_ALL);
 
 require_once 'application/bootstrap.php';
 
-
+//http:roothat:1017
+//Model - логика
+//View - отображение/представление
+//Controller - работа с пользователем
 
 
 

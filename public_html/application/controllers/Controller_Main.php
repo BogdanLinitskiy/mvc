@@ -1,13 +1,20 @@
 <?php
 
-class Controller_Main
+class Controller_Main extends Controller
 {
+	public $model;
+	public function __construct()
+	{
+		parent::__construct();
+		require 'application/models/Model_Main.php';
+		$this->model = new Model_Main();
+	}
+
 	public function action_index(){
-		echo 'Main page';
-		die();
+		$this->view->generate('main');
 	}
 	public function action_contacts(){
-		echo 'Contacts page';
-		die();
+		$data['contacts'] = $this->model->getContacts();
+		$this->view->generate('contacts',$data);
 	}
 }
